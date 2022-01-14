@@ -23,7 +23,7 @@ async function getData() {
     let request = new Request(`https://wakatime.com/api/v1/users/current/durations?date=${getCurrentDate()}`);
     request.method = "GET";
     request.headers = {
-        "Authorization": `Bearer ${WAKATIME_ACCESS_TOKEN}`
+        "Authorization": `Bearer ${WAKATIME_ACCESS_TOKEN}`,
         "Content-Type": "application/json"
     };
 
